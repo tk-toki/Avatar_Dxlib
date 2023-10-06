@@ -15,8 +15,8 @@ Image::~Image() {
 }
 
 void Image::Scale(double x, double y) {
-	sizeX = sizeX * x;
-	sizeY = sizeY * y;
+	sizeX = (int)(sizeX * x);
+	sizeY = (int)(sizeY * y);
 }
 
 void Image::Position(int x, int y) {
@@ -24,7 +24,7 @@ void Image::Position(int x, int y) {
 	positionY = y;
 }
 
-void Image::Draw() {
+void Image::Draw() const {
 	DrawExtendGraph(
 		positionX - sizeX,
 		positionY - sizeY,

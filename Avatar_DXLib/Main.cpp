@@ -4,6 +4,8 @@
 #define SCREEN_SIZE_X 432
 #define SCREEN_SIZE_Y 768
 
+const Image* DrawImage(const Image* open, const Image* close, bool isOpen);
+
 // プログラムは WinMain から始まります
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
@@ -16,28 +18,37 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		return -1;			// エラーが起きたら直ちに終了
 	}
 	
-	auto closeMouseImage = new Image("F:\\Image\\zundamon\\n.png");
+	auto closeMouseImage = new Image("D:\\ProgrammingSource\\Avatar\\Image\\n.png");
 	closeMouseImage->Position(SCREEN_SIZE_X / 2, SCREEN_SIZE_Y / 2); // 画面の真ん中に
 	closeMouseImage->Scale(0.2, 0.2); // サイズは5分の1にする
 
-	auto openMouseImage = new Image("F:\\Image\\zundamon\\a.png");
+	auto openMouseImage = new Image("D:\\ProgrammingSource\\Avatar\\Image\\a.png");
 	openMouseImage->Position(SCREEN_SIZE_X / 2, SCREEN_SIZE_Y / 2); // 画面の真ん中に
 	openMouseImage->Scale(0.2, 0.2); // サイズは5分の1にする
 
-	auto nowImage = closeMouseImage;
-
+	const Image* nowImage = NULL;
 	while (ProcessMessage() == 0)
 	{
 		ClearDrawScreen();//裏画面消す
 		SetDrawScreen(DX_SCREEN_BACK);//描画先を裏画面に
 
+		nowImage = DrawImage(openMouseImage, closeMouseImage, false);
 		nowImage->Draw();
 
 		ScreenFlip();//裏画面を表画面にコピー
 	}
 	
+	delete openMouseImage;
 	delete closeMouseImage;
+	delete nowImage;
 	DxLib_End();				// ＤＸライブラリ使用の終了処理
 
 	return 0;				// ソフトの終了 
+}
+
+const Image* DrawImage(const Image* open, const Image* close, bool isOpen) {
+	if (isOpen) {
+		return open;
+	}
+	return close;
 }
