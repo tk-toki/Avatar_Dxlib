@@ -1,1 +1,4 @@
 D:\ProgrammingSource\Avatar_DXlib\x64\Debug\Avatar_DXLib.exe
+D:\ProgrammingSource\Avatar\Avatar_DXLib\x64\Debug\Avatar_DXLib.exe
+D:\ProgrammingSource\Avatar\Avatar_DXLib\x64\Debug\Avatar_DXLib.vcxproj.CopyComplete
+D:\ProgrammingSource\Avatar\Avatar_DXLib\x64\Debug\portaudio.dll

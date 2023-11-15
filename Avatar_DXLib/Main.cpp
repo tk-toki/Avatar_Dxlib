@@ -1,14 +1,14 @@
+#include "WindowProperty.h"
 #include "DxLib.h"
 #include "Image.h"
 #include "Debug.h"
-#define SCREEN_SIZE_X 432
-#define SCREEN_SIZE_Y 768
-
-const Image* DrawImage(const Image* open, const Image* close, bool isOpen);
+#include "InputAudio.h"
+#include "DrawCharacter.h"
 
 // プログラムは WinMain から始まります
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
+	SetAlwaysRunFlag(TRUE); // 非アクティブでも動作させる
 	ChangeWindowMode(TRUE); // ウィンドウモードを有効に
 	SetGraphMode(SCREEN_SIZE_X, SCREEN_SIZE_Y, 0); // ウィンドウサイズの設定
 	SetOutApplicationLogValidFlag(FALSE); // Log.txtを生成しないように設定
@@ -17,38 +17,21 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	{
 		return -1;			// エラーが起きたら直ちに終了
 	}
-	
-	auto closeMouseImage = new Image("D:\\ProgrammingSource\\Avatar\\Image\\n.png");
-	closeMouseImage->Position(SCREEN_SIZE_X / 2, SCREEN_SIZE_Y / 2); // 画面の真ん中に
-	closeMouseImage->Scale(0.2, 0.2); // サイズは5分の1にする
 
-	auto openMouseImage = new Image("D:\\ProgrammingSource\\Avatar\\Image\\a.png");
-	openMouseImage->Position(SCREEN_SIZE_X / 2, SCREEN_SIZE_Y / 2); // 画面の真ん中に
-	openMouseImage->Scale(0.2, 0.2); // サイズは5分の1にする
-
-	const Image* nowImage = NULL;
+	auto drawCharacter = new DrawCharacter();
+	drawCharacter->Init();
 	while (ProcessMessage() == 0)
 	{
 		ClearDrawScreen();//裏画面消す
 		SetDrawScreen(DX_SCREEN_BACK);//描画先を裏画面に
 
-		nowImage = DrawImage(openMouseImage, closeMouseImage, false);
-		nowImage->Draw();
+		drawCharacter->Draw();
 
 		ScreenFlip();//裏画面を表画面にコピー
 	}
 	
-	delete openMouseImage;
-	delete closeMouseImage;
-	delete nowImage;
+	delete drawCharacter;
 	DxLib_End();				// ＤＸライブラリ使用の終了処理
 
 	return 0;				// ソフトの終了 
-}
-
-const Image* DrawImage(const Image* open, const Image* close, bool isOpen) {
-	if (isOpen) {
-		return open;
-	}
-	return close;
 }

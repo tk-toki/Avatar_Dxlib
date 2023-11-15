@@ -1,4 +1,2 @@
-﻿  Main.cpp
-D:\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-D:\ProgrammingSource\Avatar_DXlib\Debug.h(9,2): warning C4091: 'static ': 変数が何も宣言されていないときは、'Debug' の左辺を無視します。
-  Avatar_DXLib.vcxproj -> D:\ProgrammingSource\Avatar_DXlib\x64\Debug\Avatar_DXLib.exe
+﻿  DrawCharacter.cpp
+  Avatar_DXLib.vcxproj -> D:\ProgrammingSource\Avatar\Avatar_DXLib\x64\Debug\Avatar_DXLib.exe

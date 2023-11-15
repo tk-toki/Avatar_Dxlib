@@ -13,23 +13,53 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="ソース ファイル\Debug">
+      <UniqueIdentifier>{2c008987-1deb-4001-9908-90e6a3343f8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Image">
+      <UniqueIdentifier>{c4006bce-035c-4f03-bd5f-8280d1415c3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\InputAudio">
+      <UniqueIdentifier>{a8c9165c-f360-46b5-91a7-2ba079f9f928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene">
+      <UniqueIdentifier>{8b3d883d-f0b6-40ab-973b-61525d54b9e5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="Image.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="Debug.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Image.cpp">
+      <Filter>ソース ファイル\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="InputAudio.cpp">
+      <Filter>ソース ファイル\InputAudio</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawCharacter.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Image.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="Debug.h">
+      <Filter>ソース ファイル\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>ソース ファイル\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="InputAudio.h">
+      <Filter>ソース ファイル\InputAudio</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawCharacter.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="IScene.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowProperty.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
   </ItemGroup>

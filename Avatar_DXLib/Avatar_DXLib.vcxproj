@@ -140,12 +140,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Debug.cpp" />
+    <ClCompile Include="DrawCharacter.cpp" />
     <ClCompile Include="Image.cpp" />
+    <ClCompile Include="InputAudio.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Debug.h" />
+    <ClInclude Include="DrawCharacter.h" />
     <ClInclude Include="Image.h" />
+    <ClInclude Include="InputAudio.h" />
+    <ClInclude Include="IScene.h" />
+    <ClInclude Include="WindowProperty.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
