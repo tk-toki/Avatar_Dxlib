@@ -139,18 +139,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AudioSourceSelect.cpp" />
     <ClCompile Include="Debug.cpp" />
     <ClCompile Include="DrawCharacter.cpp" />
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="InputAudio.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="SceneFactory.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AudioSourceSelect.h" />
     <ClInclude Include="Debug.h" />
     <ClInclude Include="DrawCharacter.h" />
     <ClInclude Include="Image.h" />
     <ClInclude Include="InputAudio.h" />
     <ClInclude Include="IScene.h" />
+    <ClInclude Include="SceneFactory.h" />
     <ClInclude Include="WindowProperty.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

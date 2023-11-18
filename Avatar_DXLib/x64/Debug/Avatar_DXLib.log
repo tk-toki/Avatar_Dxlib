@@ -1,2 +1,50 @@
-﻿  DrawCharacter.cpp
-  Avatar_DXLib.vcxproj -> D:\ProgrammingSource\Avatar\Avatar_DXLib\x64\Debug\Avatar_DXLib.exe
+﻿  AudioSourceSelect.cpp
+D:\ProgrammingSource\Avatar\Avatar_DXLib\DrawCharacter.h(6,30): error C2504: 'IScene': 定義されていない基底クラスが宣言されています。
+D:\ProgrammingSource\Avatar\Avatar_DXLib\DrawCharacter.h(17,11): error C2143: 構文エラー: ';' が '*' の前にありません。
+D:\ProgrammingSource\Avatar\Avatar_DXLib\DrawCharacter.h(17,11): error C4430: 型指定子がありません - int と仮定しました。メモ: C++ は int を既定値としてサポートしていません
+D:\ProgrammingSource\Avatar\Avatar_DXLib\DrawCharacter.h(17,33): error C2238: ';' の前に無効なトークンがあります。
+D:\ProgrammingSource\Avatar\Avatar_DXLib\DrawCharacter.h(14,10): error C3668: 'DrawCharacter::Init': オーバーライド指定子 'override' を伴うメソッドは、基底クラス メソッドをオーバーライドしませんでした
+D:\ProgrammingSource\Avatar\Avatar_DXLib\DrawCharacter.h(15,10): error C3668: 'DrawCharacter::Update': オーバーライド指定子 'override' を伴うメソッドは、基底クラス メソッドをオーバーライドしませんでした
+D:\ProgrammingSource\Avatar\Avatar_DXLib\DrawCharacter.h(16,10): error C3668: 'DrawCharacter::IsNext': オーバーライド指定子 'override' を伴うメソッドは、基底クラス メソッドをオーバーライドしませんでした
+D:\ProgrammingSource\Avatar\Avatar_DXLib\SceneFactory.h(14,15): error C2143: 構文エラー: ';' が '*' の前にありません。
+D:\ProgrammingSource\Avatar\Avatar_DXLib\SceneFactory.h(14,15): error C4430: 型指定子がありません - int と仮定しました。メモ: C++ は int を既定値としてサポートしていません
+D:\ProgrammingSource\Avatar\Avatar_DXLib\SceneFactory.h(14,37): error C2238: ';' の前に無効なトークンがあります。
+D:\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+D:\ProgrammingSource\Avatar\Avatar_DXLib\AudioSourceSelect.cpp(19,26): error C2039: 'Factory': 'SceneFactory' のメンバーではありません
+D:\ProgrammingSource\Avatar\Avatar_DXLib\SceneFactory.h(12,7): message : 'SceneFactory' の宣言を確認してください
+D:\ProgrammingSource\Avatar\Avatar_DXLib\AudioSourceSelect.cpp(19,26): error C3861: 'Factory': 識別子が見つかりませんでした
+  DrawCharacter.cpp
+D:\ProgrammingSource\Avatar\Avatar_DXLib\AudioSourceSelect.h(4,34): error C2504: 'IScene': 定義されていない基底クラスが宣言されています。
+D:\ProgrammingSource\Avatar\Avatar_DXLib\AudioSourceSelect.h(10,11): error C2143: 構文エラー: ';' が '*' の前にありません。
+D:\ProgrammingSource\Avatar\Avatar_DXLib\AudioSourceSelect.h(10,11): error C4430: 型指定子がありません - int と仮定しました。メモ: C++ は int を既定値としてサポートしていません
+D:\ProgrammingSource\Avatar\Avatar_DXLib\AudioSourceSelect.h(10,33): error C2238: ';' の前に無効なトークンがあります。
+D:\ProgrammingSource\Avatar\Avatar_DXLib\AudioSourceSelect.h(7,10): error C3668: 'AudioSourceSelect::Init': オーバーライド指定子 'override' を伴うメソッドは、基底クラス メソッドをオーバーライドしませんでした
+D:\ProgrammingSource\Avatar\Avatar_DXLib\AudioSourceSelect.h(8,10): error C3668: 'AudioSourceSelect::Update': オーバーライド指定子 'override' を伴うメソッドは、基底クラス メソッドをオーバーライドしませんでした
+D:\ProgrammingSource\Avatar\Avatar_DXLib\AudioSourceSelect.h(9,10): error C3668: 'AudioSourceSelect::IsNext': オーバーライド指定子 'override' を伴うメソッドは、基底クラス メソッドをオーバーライドしませんでした
+D:\ProgrammingSource\Avatar\Avatar_DXLib\SceneFactory.h(14,15): error C2143: 構文エラー: ';' が '*' の前にありません。
+D:\ProgrammingSource\Avatar\Avatar_DXLib\SceneFactory.h(14,15): error C4430: 型指定子がありません - int と仮定しました。メモ: C++ は int を既定値としてサポートしていません
+D:\ProgrammingSource\Avatar\Avatar_DXLib\SceneFactory.h(14,37): error C2238: ';' の前に無効なトークンがあります。
+  Image.cpp
+D:\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  Main.cpp
+D:\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+D:\ProgrammingSource\Avatar\Avatar_DXLib\Debug.h(10,2): warning C4091: 'static ': 変数が何も宣言されていないときは、'Debug' の左辺を無視します。
+D:\ProgrammingSource\Avatar\Avatar_DXLib\AudioSourceSelect.h(4,34): error C2504: 'IScene': 定義されていない基底クラスが宣言されています。
+D:\ProgrammingSource\Avatar\Avatar_DXLib\AudioSourceSelect.h(10,11): error C2143: 構文エラー: ';' が '*' の前にありません。
+D:\ProgrammingSource\Avatar\Avatar_DXLib\AudioSourceSelect.h(10,11): error C4430: 型指定子がありません - int と仮定しました。メモ: C++ は int を既定値としてサポートしていません
+D:\ProgrammingSource\Avatar\Avatar_DXLib\AudioSourceSelect.h(10,33): error C2238: ';' の前に無効なトークンがあります。
+D:\ProgrammingSource\Avatar\Avatar_DXLib\AudioSourceSelect.h(7,10): error C3668: 'AudioSourceSelect::Init': オーバーライド指定子 'override' を伴うメソッドは、基底クラス メソッドをオーバーライドしませんでした
+D:\ProgrammingSource\Avatar\Avatar_DXLib\AudioSourceSelect.h(8,10): error C3668: 'AudioSourceSelect::Update': オーバーライド指定子 'override' を伴うメソッドは、基底クラス メソッドをオーバーライドしませんでした
+D:\ProgrammingSource\Avatar\Avatar_DXLib\AudioSourceSelect.h(9,10): error C3668: 'AudioSourceSelect::IsNext': オーバーライド指定子 'override' を伴うメソッドは、基底クラス メソッドをオーバーライドしませんでした
+D:\ProgrammingSource\Avatar\Avatar_DXLib\SceneFactory.h(14,15): error C2143: 構文エラー: ';' が '*' の前にありません。
+D:\ProgrammingSource\Avatar\Avatar_DXLib\SceneFactory.h(14,15): error C4430: 型指定子がありません - int と仮定しました。メモ: C++ は int を既定値としてサポートしていません
+D:\ProgrammingSource\Avatar\Avatar_DXLib\SceneFactory.h(14,37): error C2238: ';' の前に無効なトークンがあります。
+D:\ProgrammingSource\Avatar\Avatar_DXLib\Main.cpp(22,32): error C2039: 'Factory': 'SceneFactory' のメンバーではありません
+D:\ProgrammingSource\Avatar\Avatar_DXLib\SceneFactory.h(12,7): message : 'SceneFactory' の宣言を確認してください
+D:\ProgrammingSource\Avatar\Avatar_DXLib\Main.cpp(22,32): error C3861: 'Factory': 識別子が見つかりませんでした
+D:\ProgrammingSource\Avatar\Avatar_DXLib\Main.cpp(32,4): error C2541: 'delete': ポインターではないオブジェクトを削除することはできません。
+D:\ProgrammingSource\Avatar\Avatar_DXLib\Main.cpp(34,15): error C3536: 'nextScene': 初期化前に使用することはできません
+D:\ProgrammingSource\Avatar\Avatar_DXLib\Main.cpp(41,2): error C2541: 'delete': ポインターではないオブジェクトを削除することはできません。
+  SceneFactory.cpp
+D:\ProgrammingSource\Avatar\Avatar_DXLib\SceneFactory.cpp(3,15): error C2600: 'SceneFactory::SceneFactory': コンパイラで生成された特殊メンバー関数を定義できません (クラスで最初に宣言されなければなりません)
+  コードを生成中...

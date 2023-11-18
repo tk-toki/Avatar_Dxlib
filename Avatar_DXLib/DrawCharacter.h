@@ -12,5 +12,7 @@ private:
 public:
     ~DrawCharacter();
     void Init() override;
-    void Draw() override;
+    void Update() override;
+    bool IsNext() override;
+    IScene* NextScene() override;
 };
