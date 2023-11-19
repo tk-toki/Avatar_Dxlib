@@ -7,7 +7,7 @@ public:
 	~Image();
 	void Scale(double x, double y);
 	void Position(int x, int y);
-	void Draw() const;
+	void Update() const;
 private:
 	int handle;
 	int positionX;

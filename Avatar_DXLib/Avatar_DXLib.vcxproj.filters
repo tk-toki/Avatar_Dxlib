@@ -25,6 +25,12 @@
     <Filter Include="ソース ファイル\Scene">
       <UniqueIdentifier>{8b3d883d-f0b6-40ab-973b-61525d54b9e5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Scene\DrawCharacter">
+      <UniqueIdentifier>{ff129767-dbc4-4e31-b897-4e6e23c39259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene\SelectAudioSource">
+      <UniqueIdentifier>{b045c198-965a-4cbf-89c2-091a797a0b49}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -40,7 +46,13 @@
       <Filter>ソース ファイル\InputAudio</Filter>
     </ClCompile>
     <ClCompile Include="DrawCharacter.cpp">
-      <Filter>ソース ファイル\Scene</Filter>
+      <Filter>ソース ファイル\Scene\DrawCharacter</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectAudioSource.cpp">
+      <Filter>ソース ファイル\Scene\SelectAudioSource</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneFactory.cpp">
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -53,13 +65,19 @@
     <ClInclude Include="InputAudio.h">
       <Filter>ソース ファイル\InputAudio</Filter>
     </ClInclude>
-    <ClInclude Include="DrawCharacter.h">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClInclude>
     <ClInclude Include="IScene.h">
       <Filter>ソース ファイル\Scene</Filter>
     </ClInclude>
     <ClInclude Include="WindowProperty.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawCharacter.h">
+      <Filter>ソース ファイル\Scene\DrawCharacter</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectAudioSource.h">
+      <Filter>ソース ファイル\Scene\SelectAudioSource</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneFactory.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
   </ItemGroup>

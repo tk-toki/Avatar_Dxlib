@@ -24,7 +24,7 @@ void Image::Position(int x, int y) {
 	positionY = y;
 }
 
-void Image::Draw() const {
+void Image::Update() const {
 	DrawExtendGraph(
 		positionX - sizeX,
 		positionY - sizeY,

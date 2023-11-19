@@ -1,5 +1,6 @@
 #include "WindowProperty.h"
 #include "DxLib.h"
+#include "SceneFactory.h"
 #include "Image.h"
 #include "Debug.h"
 #include "InputAudio.h"
@@ -18,19 +19,25 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		return -1;			// エラーが起きたら直ちに終了
 	}
 
-	auto drawCharacter = new DrawCharacter();
-	drawCharacter->Init();
+	IScene* nowScene = SceneFactory::Factory(SceneType::SELECT_AUDIO_SOURCE);
+	nowScene->Init();
 	while (ProcessMessage() == 0)
 	{
 		ClearDrawScreen();//裏画面消す
 		SetDrawScreen(DX_SCREEN_BACK);//描画先を裏画面に
 
-		drawCharacter->Draw();
+		nowScene->Update();
+		if (nowScene->IsNext()) {
+			IScene* nextScene = nowScene->NextScene();
+			delete nowScene;
+			nowScene = nextScene;
+			nowScene->Init();
+		}
 
 		ScreenFlip();//裏画面を表画面にコピー
 	}
 	
-	delete drawCharacter;
+	delete nowScene;
 	DxLib_End();				// ＤＸライブラリ使用の終了処理
 
 	return 0;				// ソフトの終了 

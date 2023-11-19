@@ -10,7 +10,10 @@ private:
     Image* m_openMouseImage;
     const Image* DrawImage(bool isOpen);
 public:
+    DrawCharacter();
     ~DrawCharacter();
     void Init() override;
-    void Draw() override;
+    void Update() override;
+    bool IsNext() override;
+    IScene* NextScene() override;
 };

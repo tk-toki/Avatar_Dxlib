@@ -1,7 +1,9 @@
 #include "DrawCharacter.h"
 #include "WindowProperty.h"
 
-DrawCharacter::
+DrawCharacter::DrawCharacter()
+{
+}
 
 DrawCharacter::~DrawCharacter()
 {
@@ -22,10 +24,20 @@ void DrawCharacter::Init() {
 	m_openMouseImage->Scale(0.2, 0.2); // ƒTƒCƒY‚Í5•ª‚Ì1‚É‚·‚é
 }
 
-void DrawCharacter::Draw() {
+void DrawCharacter::Update() {
 	bool isOpen = m_inputAudio->IsThereSound();
 	const Image* nowImage = DrawImage(isOpen);
-	nowImage->Draw();
+	nowImage->Update();
+}
+
+bool DrawCharacter::IsNext()
+{
+	return false;
+}
+
+IScene* DrawCharacter::NextScene()
+{
+	return nullptr;
 }
 
 const Image* DrawCharacter::DrawImage(bool isOpen) {

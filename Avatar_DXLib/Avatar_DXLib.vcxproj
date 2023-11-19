@@ -144,6 +144,8 @@
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="InputAudio.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="SceneFactory.cpp" />
+    <ClCompile Include="SelectAudioSource.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Debug.h" />
@@ -151,6 +153,8 @@
     <ClInclude Include="Image.h" />
     <ClInclude Include="InputAudio.h" />
     <ClInclude Include="IScene.h" />
+    <ClInclude Include="SceneFactory.h" />
+    <ClInclude Include="SelectAudioSource.h" />
     <ClInclude Include="WindowProperty.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
