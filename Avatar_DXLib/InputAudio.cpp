@@ -9,6 +9,13 @@
 #define NUM_SAMPLES (SAMPLE_RATE * NUM_SECONDS)
 #define THRESHOLD (0.005)
 
+int InputAudio::deviceIndex = 0;
+
+void InputAudio::SetInputAudioIndex(int audioIndex)
+{
+    deviceIndex = audioIndex;
+}
+
 InputAudio::InputAudio() {
 
 }
@@ -18,7 +25,7 @@ bool InputAudio::IsThereSound() {
     Pa_Initialize();
     // Set up input parameters
     PaStreamParameters inputParameters;
-    inputParameters.device = Pa_GetDefaultInputDevice();
+    inputParameters.device = deviceIndex;
     inputParameters.channelCount = 1;
     inputParameters.sampleFormat = paFloat32;
     inputParameters.suggestedLatency = Pa_GetDeviceInfo(inputParameters.device)->defaultLowInputLatency;

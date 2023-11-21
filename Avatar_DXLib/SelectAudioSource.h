@@ -4,6 +4,9 @@
 
 class SelectAudioSource : public IScene {
 private:
+    int m_deviceIndex;
+    void DrawDeviceNameList();
+    int ChangeSelectDevice();
 public:
     SelectAudioSource();
     ~SelectAudioSource();

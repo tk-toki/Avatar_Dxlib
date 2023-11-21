@@ -1,10 +1,4 @@
-﻿  DrawCharacter.cpp
-  Main.cpp
+﻿  SelectAudioSource.cpp
 D:\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
 D:\ProgrammingSource\Avatar\Avatar_DXLib\Debug.h(10,2): warning C4091: 'static ': 変数が何も宣言されていないときは、'Debug' の左辺を無視します。
-  SceneFactory.cpp
-  SelectAudioSource.cpp
-D:\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-  コードを生成中...
-Debug.obj : warning LNK4204: '' に参照するモジュールのデバッグ情報がありません。デバッグ情報を無視してオブジェクトをリンクします。
   Avatar_DXLib.vcxproj -> D:\ProgrammingSource\Avatar\Avatar_DXLib\x64\Debug\Avatar_DXLib.exe

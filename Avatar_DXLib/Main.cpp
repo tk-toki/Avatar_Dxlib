@@ -9,6 +9,7 @@
 // プログラムは WinMain から始まります
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
+	SetUseCharCodeFormat(DX_CHARCODEFORMAT_UTF8);
 	SetAlwaysRunFlag(TRUE); // 非アクティブでも動作させる
 	ChangeWindowMode(TRUE); // ウィンドウモードを有効に
 	SetGraphMode(SCREEN_SIZE_X, SCREEN_SIZE_Y, 0); // ウィンドウサイズの設定
